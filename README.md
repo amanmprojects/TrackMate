@@ -1,5 +1,5 @@
-# dogtracker
-LoRa Dog Tracker Project
+# TrackMate
+LoRa pet Tracker Project
 
 Thanks for your interest in this project.
 
