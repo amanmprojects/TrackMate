@@ -1,5 +1,8 @@
 # ESP32 Setup Guide for Arduino IDE on Windows
 
+For detailed step-by-step instructions, watch this tutorial:
+[ESP32 Setup Tutorial](https://youtu.be/DjfjECHtLg4)
+
 ## Prerequisites
 1. Arduino IDE installed on your Windows system
 2. USB cable for ESP32 connection
@@ -18,10 +21,6 @@
     ```
 4. Go to `Tools > Board > Boards Manager`
 5. Search for "ESP32" and install the ESP32 board package by espressif systems
-
-## Additional Resources
-For detailed step-by-step instructions, watch this tutorial:
-[ESP32 Setup Tutorial](https://youtu.be/DjfjECHtLg4)
 
 ## Note
 Make sure your ESP32 board is properly connected and recognized by Windows before attempting to upload sketches.
