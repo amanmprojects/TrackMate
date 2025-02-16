@@ -10,8 +10,8 @@
 TinyGPSPlus gps;
 
 // Replace with your network credentials
-const char* ssid = "POCO M3 Pro 5G";
-const char* password = "vyas0340";
+const char* ssid = "POCO F4";
+const char* password = "1234567890";
 
 int num = 0;
 
@@ -32,25 +32,8 @@ void handleGPS() {
   serializeJson(doc, jsonString);
 
   server.send(200, "application/json", jsonString);
-
-  // doc["count"] = num;
-  // num++;
-  // String jsonString;
-  // serializeJson(doc, jsonString);
-  // server.send(200, "application/json", jsonString);
-  // Serial.println("Bhejdiya");
 }
 
-void handleMeme() {
-  StaticJsonDocument<200> doc;
-  doc["question"] = "What does a storm cloud wear under his raincoat?";
-  doc["answer"] = "Thunderwear";
-
-  String jsonString;
-  serializeJson(doc, jsonString);
-
-  server.send(200, "application/json", jsonString);
-}
 
 void setup() {
   Serial.begin(115200);
@@ -70,7 +53,6 @@ void setup() {
   Serial.println(WiFi.localIP());
 
   server.on("/gps", handleGPS);
-  server.on("/joke", handleMeme);
   server.begin();
   Serial.println("HTTP server started");
 }
